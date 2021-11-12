@@ -1,1 +1,218 @@
-placeholder
+<html lang="en">
+<head>
+
+    <script>
+        var song = new Audio('assets/music/sample.mp3');
+
+        function playpause(id){
+
+        if (!song.paused) {
+            song.pause();
+            document.getElementById("logo-img").src = "assets/logo/logo-gray.png";
+        } else {
+            song.play();
+            document.getElementById("logo-img").src = "assets/logo/logo-rainbow.png";
+        }
+    }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+        type="image/png"
+        href="favicon.ico">
+    <title>Beast b0y</title>
+</head>
+<body>
+    <!-- Signature -->
+    <!-- <div onclick="playpause('logo')" id="logo">
+        <img id="logo-img" src="assets/logo/logo-gray.png">
+    </div> -->
+
+    <div id="name">
+        <h1>Beast b0y</h1>
+    </div>
+
+    <!-- <div id="bio">
+        <p>starfish deathsquad is a mysterious and ultra-powerful music producer located in the northeastern forests of massachusetts. harnessing a vast range of natural and digital sounds at high tempo, he combines influences from old-school electronic subgenres like drum-n-bass and chiptune with rock guitars, trap hi-hats, and loud 808s. The kingly archduke of science and power welcomes you to his webpage; his work and contact information can be found by following the links below.</p>
+    </div> -->
+
+    <!-- Links -->
+    <div class="links-row">
+        <div id="spotify" class="buttons">
+            <a href="https://open.spotify.com/artist/6A6phl5bc9BWR7E9o2VmJD"><img id="spotify-img" src="assets/icons/spotify-triangle.png"></a>
+        </div>
+        <div id="apple" class="buttons">
+            <a href="https://music.apple.com/us/artist/starfish-deathsquad/1584500713"><img id="apple-img" src="assets/icons/apple-triangle.png"/></a>
+        </div>
+    </div>
+    <div class="links-row">
+        <div id="youtube" class="buttons">
+            <a href="https://music.youtube.com/channel/UChTCvyvfduS_ISwHrLWCJ0w"><img id="youtube-img" src="assets/icons/youtube-triangle.png"</a>
+        </div>
+        <div id="soundcloud" class="buttons">
+            <a href="https://soundcloud.com/east0"><img id="beatstars-img" src="assets/icons/soundcloud-triangle.png"></a>
+        </div>
+    </div>
+    <div class="links-row">
+        <div id="instagram" class="buttons">
+            <a href="https://www.instagram.com/beastb0ymusic/"><img id="instagram-img" src="assets/icons/instagram-triangle.png"></a>
+        </div>
+        <div id="discord" class="buttons">
+            <a href="https://www.discord.com"><img id="discord-img" src="assets/icons/discord-triangle.png"></a>
+        </div>
+    </div>
+    <div class="links-row">
+        <div id="email" class="buttons">
+            <a href="mailto:matthewlayous@gmail.com"><img id="email-img" src="assets/icons/email-triangle.png"></a>
+        </div>
+        <!-- <div id="email" class="buttons">
+            <a href="mailto:matthewlayous@gmail.com"><img id="email-img" src="assets/icons/email.png"></a>
+        </div> -->
+    </div>
+
+    <div class="sitesbysamchambers">
+        <a class="samchambers" href="https://github.com/SamChambers">sitesbysam</a>
+    </div>
+ 
+</body>
+
+<style>
+
+    @font-face {
+        font-family: 'name';
+        src: url(assets/fonts/waver.ttf);
+    }
+
+    html {
+        cursor: url(assets/cursor/blue.cur), auto !important;
+    }
+
+    body {
+        background: rgb(0,241,100);
+        background: radial-gradient(circle, rgba(0,241,100,1) 0%, rgba(19,218,115,1) 15%, rgba(192,0,255,1) 100%);      /* background: url("assets/background.png"); */
+        background-size: cover;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        letter-spacing: 2px;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #name {
+        font-family: 'name';
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* #logo {
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+        max-height: auto;
+    } #logo img {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    } */
+
+    /* #music {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid black;
+        background-image: url(assets/music/play.png);
+        background-size: contain;
+        padding-bottom: 10px;
+    } */
+
+    /* #bio {
+        text-align: justify;
+        font-size: 100%;
+        font-size-adjust: none;
+        font-family: 'bio';
+        background-color: white;
+        border: 5px solid black;
+        margin-bottom: 20px;
+        padding: 5px;
+    } #bio:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    } */
+
+    .links-row {
+        padding-bottom: 25px;
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+    } .buttons {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 30%;
+        max-height: 30%;
+        /* border: 5px solid rgb(0, 0, 0); */
+        text-decoration: none;
+        /* background-color: rgb(255, 255, 255); */
+        transition: 2s;
+        cursor: url(assets/cursor/purple.cur), auto !important;
+    } .buttons img {
+        max-width: 100%;
+        max-height: 100%;
+        cursor: url(assets/cursor/purple.cur), auto !important;
+    }
+
+    #spotify:hover {
+        /* background-color: rgb(21, 233, 14); */
+    } #spotify-img:hover {
+        /* cursor: url(assets/purple.cur); */
+    }
+    #apple:hover {
+        /* background-color: rgb(59, 119, 247); */
+    } #apple-img:hover {
+        /* cursor: url(assets/purple.cur); */
+    }
+    #youtube:hover {
+        /* background-color: rgb(222, 51, 35); */
+    } #youtube-img:hover {
+        /* cursor: url(assets/purple.cur);     */
+    }
+    #soundcloud:hover {
+        /* background-color: rgb(181, 93, 36); */
+    } #soundcloud-img:hover {
+        /* cursor: url(assets/purple.cur);     */
+    }
+    #instagram:hover {
+        /* background-color: rgb(233, 93, 226); */
+    } #instagram-img:hover {
+        /* cursor: url(assets/purple.cur);     */
+    }
+    #email:hover {
+        /* background-color: rgb(255, 115, 0); */
+    } #email-img:hover {
+        /* cursor: url(assets/purple.cur);     */
+    }
+
+    
+
+    .sitesbysamchambers {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        cursor: url(assets/cursor/purple.cur), auto !important;
+    }   .samchambers {
+        color: rgba(255, 255, 255, 0.74);
+        text-decoration: underline;
+        cursor: url(assets/cursor/purple.cur), auto !important;
+    }
+</style>
+
+</html>
